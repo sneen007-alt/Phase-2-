@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs &amp; Competitions | UMD Sales Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#584141",
+                    "surface-container-high": "#eae8e7",
+                    "on-surface": "#1b1c1c",
+                    "tertiary-container": "#393a3b",
+                    "surface-variant": "#e4e2e1",
+                    "surface": "#fbf9f8",
+                    "outline-variant": "#e0bfbe",
+                    "primary": "#51000d",
+                    "surface-container-highest": "#e4e2e1",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-primary-fixed": "#410009",
+                    "background": "#fbf9f8",
+                    "inverse-on-surface": "#f3f0f0",
+                    "primary-fixed": "#ffdad9",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#ff7b7f",
+                    "inverse-primary": "#ffb3b2",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "outline": "#8c7070",
+                    "secondary-fixed-dim": "#f2c025",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "secondary": "#755b00",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed": "#241a00",
+                    "on-secondary-container": "#705600",
+                    "on-tertiary-fixed-variant": "#464748",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "surface-bright": "#fbf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "tertiary-fixed": "#e3e2e3",
+                    "surface-tint": "#ae2e39",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#fecb32",
+                    "tertiary": "#232526",
+                    "on-tertiary-container": "#a3a4a5",
+                    "surface-container": "#f0eded",
+                    "secondary-fixed": "#ffdf92",
+                    "primary-container": "#7a0019"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soul-gradient {
+            background: linear-gradient(135deg, #51000d 0%, #7a0019 100%);
+        }
+        .soul-gradient-hover:hover {
+            background: linear-gradient(135deg, #7a0019 0%, #51000d 100%);
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-white/80 dark:bg-stone-950/80 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black text-[#51000d] dark:text-[#fecb32] uppercase tracking-tighter">UMD Sales Club</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#51000d] Inter font-sans tracking-tight transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#51000d] Inter font-sans tracking-tight transition-colors duration-300" href="#">Who We Are</a>
+<a class="text-[#51000d] dark:text-[#fecb32] font-bold border-b-2 border-[#755b00] pb-1 Inter font-sans tracking-tight" href="#">Programs</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#51000d] Inter font-sans tracking-tight transition-colors duration-300" href="#">Community</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-4 py-2 text-sm font-bold text-primary hover:bg-stone-50 transition-colors">Bulldog Connect</button>
+<button class="soul-gradient text-white px-6 py-2.5 rounded-xl font-bold text-sm tracking-tight scale-95 active:duration-150 transition-all shadow-sm">Join Now</button>
+</div>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative py-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Career Excellence</span>
+<div class="h-px w-12 bg-outline-variant/30"></div>
+</div>
+<h1 class="text-5xl lg:text-7xl font-black tracking-tighter text-on-surface leading-[0.9]">
+                        Forging the Next <br/>
+<span class="text-primary">Generation of Leaders.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Beyond the classroom. Our programs provide the competitive edge, professional networks, and high-stakes environment needed to excel in modern enterprise sales.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low shadow-2xl relative z-10">
+<img alt="Student leadership" class="w-full h-full object-cover" data-alt="Modern office setting with diverse young professionals in business attire collaborating around a conference table with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ziLU5JDR6nDJpvqwFMlWuIuyocqoB7dtYmreVDOBlCvoQWMbVFdG4FRPPWNUXVFRJU_1R06JSScZtJm1GE0aPhX3wpncNTrvtIFV9Xsd5OvxLvDx0UMKSNjLYnMpljwHaTIkCZiOeUgjfhIMQnIMAwksV3DO4OJs30__HJyt6B4COMnmE9mh1bG_XUDIJm0cNMolPrpQoWvcflOojNTggyFx8PS6NgU1Ktg01kkCugOsSHsXvOkRUBVepvZq7G1riTAjVVh-1QLi"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-xl -z-10 opacity-50 blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Mentorship Section: Editorial Layout -->
+<section class="bg-surface-container-low py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="space-y-12">
+<header class="space-y-4">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Professional Network</span>
+<h2 class="text-4xl font-black tracking-tight leading-tight">Executive Mentorship <br/>Program</h2>
+</header>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:soul-gradient group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold">1-on-1 Guidance</h3>
+<p class="text-on-surface-variant leading-relaxed">Pair with UMD alumni and sales executives from top regional firms for monthly strategy sessions.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:soul-gradient group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="contract_edit">contract_edit</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold">Resume &amp; Pitch Review</h3>
+<p class="text-on-surface-variant leading-relaxed">Receive direct feedback on your personal brand and sales techniques from industry veterans.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:soul-gradient group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold">Fast-Track Career Path</h3>
+<p class="text-on-surface-variant leading-relaxed">Over 85% of mentored students secure high-value internships before their junior year.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 lg:p-12 rounded-xl border-l-4 border-primary shadow-sm">
+<h4 class="text-2xl font-bold mb-6">How to Participate</h4>
+<ol class="space-y-8">
+<li class="flex gap-4">
+<span class="text-3xl font-black text-secondary/30">01</span>
+<div>
+<p class="font-bold">Active Membership</p>
+<p class="text-on-surface-variant text-sm mt-1">Must be an active member of the UMD Sales Club in good standing.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="text-3xl font-black text-secondary/30">02</span>
+<div>
+<p class="font-bold">Application Window</p>
+<p class="text-on-surface-variant text-sm mt-1">Submit your profile and interest statement by Sept 15th for the Fall cohort.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="text-3xl font-black text-secondary/30">03</span>
+<div>
+<p class="font-bold">Matching Process</p>
+<p class="text-on-surface-variant text-sm mt-1">Our executive board aligns your career interests with the perfect mentor.</p>
+</div>
+</li>
+</ol>
+<button class="w-full mt-12 bg-surface-container-high py-4 rounded-xl font-bold hover:bg-surface-container-highest transition-colors">Apply for Mentorship</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Competitions Section: Bento Grid -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<header class="mb-16 text-center max-w-2xl mx-auto space-y-4">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm">Competitive Arena</span>
+<h2 class="text-4xl lg:text-5xl font-black tracking-tight">Prove Your Potential</h2>
+<p class="text-on-surface-variant">We compete at the highest national levels, testing skills against the best sales students in the country.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- National Competition -->
+<div class="md:col-span-2 bg-primary p-8 rounded-xl text-white relative overflow-hidden flex flex-col justify-between group">
+<div class="relative z-10">
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold inline-block mb-4">Upcoming Event</div>
+<h3 class="text-3xl font-black mb-4">National Shore Sales Challenge</h3>
+<p class="text-white/80 max-w-md leading-relaxed">Represent UMD at Salisbury University. This elite competition brings together recruiters from Fortune 500 companies.</p>
+</div>
+<div class="mt-8 flex items-center gap-4 relative z-10">
+<button class="bg-white text-primary px-6 py-2 rounded-lg font-bold text-sm">Register Team</button>
+<span class="text-sm font-medium">Nov 14-16, 2024</span>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[200px] absolute -right-20 -top-20" data-icon="trophy">trophy</span>
+</div>
+</div>
+<!-- Career Readiness -->
+<div class="bg-surface-container p-8 rounded-xl border-l-4 border-secondary flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-black mb-4">Internal Sales Slam</h3>
+<p class="text-sm text-on-surface-variant">Perfect for freshmen and sophomores to test their cold calling and discovery skills in a low-stakes environment.</p>
+</div>
+<a class="mt-6 flex items-center gap-2 text-primary font-bold text-sm group" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Internship Card -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="work">work</span>
+<span class="text-[10px] bg-secondary-container font-black px-2 py-1 rounded">24 OPENINGS</span>
+</div>
+<h3 class="text-xl font-black mb-2">Corporate Fellowships</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Direct placement opportunities with our corporate partners including Federated Insurance and 3M.</p>
+</div>
+<button class="mt-6 text-sm font-bold underline underline-offset-4 decoration-2 decoration-secondary/40">View Job Board</button>
+</div>
+<!-- Toolkit Resource -->
+<div class="md:col-span-2 bg-surface-container-highest p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 space-y-4">
+<h3 class="text-2xl font-black">Competition Playbook</h3>
+<p class="text-on-surface-variant">Access our archive of winning pitch decks, roleplay recordings, and judge's feedback sheets.</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-1 text-xs font-bold bg-white px-2 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-sm" data-icon="picture_as_pdf">picture_as_pdf</span> PDF Guide
+                                </div>
+<div class="flex items-center gap-1 text-xs font-bold bg-white px-2 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-sm" data-icon="video_library">video_library</span> Video Vault
+                                </div>
+</div>
+</div>
+<div class="w-full md:w-48 aspect-square bg-white rounded-lg p-4 flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-6xl text-primary/20" data-icon="auto_stories">auto_stories</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Student Resources Section -->
+<section class="bg-surface py-32 px-6 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<h2 class="text-3xl font-black tracking-tight mb-6">Resources for <br/><span class="text-secondary">LSBE Students</span></h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">We provide the scaffolding for your academic and professional success through the Labovitz School of Business and Economics.</p>
+<div class="p-6 bg-secondary-container rounded-xl">
+<p class="text-on-secondary-container font-bold text-sm mb-2">Academic Support</p>
+<p class="text-on-secondary-container/80 text-sm">Need help with your sales concentration coursework? Join our peer tutoring sessions every Tuesday.</p>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="space-y-6">
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between p-4 border-b border-outline-variant/30 group-hover:bg-surface-container-low transition-colors rounded-t-lg">
+<span class="font-bold">Career Services Center</span>
+<span class="material-symbols-outlined text-primary" data-icon="open_in_new">open_in_new</span>
+</div>
+<p class="px-4 py-3 text-sm text-on-surface-variant">Handshake access, headshot clinics, and mock interviews tailored for business majors.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between p-4 border-b border-outline-variant/30 group-hover:bg-surface-container-low transition-colors">
+<span class="font-bold">Sales Toolkits &amp; CRM Access</span>
+<span class="material-symbols-outlined text-primary" data-icon="dataset">dataset</span>
+</div>
+<p class="px-4 py-3 text-sm text-on-surface-variant">Get hands-on experience with Salesforce and HubSpot through club-exclusive licenses.</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between p-4 border-b border-outline-variant/30 group-hover:bg-surface-container-low transition-colors rounded-t-lg">
+<span class="font-bold">Research Library</span>
+<span class="material-symbols-outlined text-primary" data-icon="menu_book">menu_book</span>
+</div>
+<p class="px-4 py-3 text-sm text-on-surface-variant">Industry reports and market data archives to fuel your sales discovery calls.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between p-4 border-b border-outline-variant/30 group-hover:bg-surface-container-low transition-colors">
+<span class="font-bold">LSBE Peer Mentoring</span>
+<span class="material-symbols-outlined text-primary" data-icon="diversity_3">diversity_3</span>
+</div>
+<p class="px-4 py-3 text-sm text-on-surface-variant">Connect with upperclassmen to navigate the Professional Sales major requirements.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: Impact Section -->
+<section class="py-24 px-6">
+<div class="max-w-5xl mx-auto soul-gradient rounded-3xl p-12 lg:p-20 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="Background texture" class="w-full h-full object-cover grayscale" data-alt="Abstract dark office architecture with diagonal lines and reflections from large windows at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZiAYPzF0McRRej379U2QV9H_fAiVkcC8Tpmp4eM8Cvh5VEfphz9jXP-GfP-C2CDMLSui8N2JvPR0rFdzyqcTHKpq6V6ikfT9X-93mFGi0hjgnIfQpCvp3WXaeApyR5-mBJmiu1tNkQDlKl8_KEmEoPacbU_ATG3UVjM2aiZN-OWlmF8dbJMuZ0DB3I_vx1tT6aXdxfjyycmY8hisBfs3mCebUQ7qt401RJ_kxD40MN4ZsAjm0ujo2VscPXztgTRQAhEIzHUR9daqP"/>
+</div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-4xl lg:text-6xl font-black text-white tracking-tighter">Ready to Close Your <br/>First Big Deal?</h2>
+<p class="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed">Whether you're exploring the major or ready to compete on the national stage, the UMD Sales Club is your home for professional excellence.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-black text-lg hover:bg-secondary transition-colors">Become a Member</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-black text-lg hover:bg-white/20 transition-colors">Speak to an Advisor</button>
+</div>
+<p class="text-white/60 text-xs uppercase tracking-widest font-bold">Join 200+ Bulldogs pursuing excellence in Professional Sales</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-bold text-[#51000d] dark:text-white uppercase tracking-tighter">UMD Sales Club</span>
+<p class="mt-4 text-stone-500 dark:text-stone-400 Inter font-sans text-sm leading-relaxed">The premier student organization for professional sales at the University of Minnesota Duluth.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#51000d] dark:text-[#fecb32] mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">UMD LSBE</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">Bulldog Connect</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#51000d] dark:text-[#fecb32] mb-4">Social</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">LinkedIn</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">Instagram</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#7a0019] transition-colors Inter font-sans text-sm" href="#">Spotify</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#51000d] dark:text-[#fecb32] mb-4">Contact</h4>
+<p class="text-stone-500 dark:text-stone-400 Inter font-sans text-sm">Labovitz School of Business and Economics</p>
+<p class="text-stone-500 dark:text-stone-400 Inter font-sans text-sm">Duluth, MN 55812</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-stone-200 dark:border-stone-800 mt-12 pt-8 flex justify-between items-center">
+<p class="text-stone-500 dark:text-stone-400 Inter font-sans text-sm">© 2024 UMD Sales Club. Labovitz School of Business and Economics.</p>
+</div>
+</footer>
+</body></html>
